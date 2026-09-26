@@ -108,6 +108,11 @@ boolean isConnected(int x, int y) {
 - Medium: [Satisfiability of Equality Equations](https://leetcode.com/problems/satisfiability-of-equality-equations/)
 - Hard: [Number of Islands II](https://leetcode.com/problems/number-of-islands-ii/)
 
+kruskal uses dsu for mst. refer prim for dense graph when kruskal cant be applied.
+then do 
+- https://leetcode.com/problems/min-cost-to-connect-all-points/submissions/2154075123/
+
+
 ## 11. Interview Variations
 Instead of "are these connected," interviewers may ask you to:
 - **Count** the number of distinct connected components

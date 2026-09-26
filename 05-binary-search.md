@@ -143,7 +143,7 @@ return low; // smallest value that satisfies isValid()
 - [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
 - [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
 - [Find Peak Element](https://leetcode.com/problems/find-peak-element/)
-- [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/)
+- [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/) done
 - [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
 
 **Hard**
