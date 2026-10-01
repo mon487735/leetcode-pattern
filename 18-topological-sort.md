@@ -94,6 +94,19 @@ void dfs(
     stack.push(node);
 }
 // Final order = pop everything off the stack
+graph[0] = [1, 2]
+graph[1] = [3]
+graph[2] = [3]
+graph[3] = []
+```
+```text
+        0
+       / \
+      ↓   ↓
+      1   2
+       \ /
+        ↓
+        3
 ```
 
 ## 7. Time Complexity
