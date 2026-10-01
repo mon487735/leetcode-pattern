@@ -66,17 +66,32 @@ while (!queue.isEmpty()) {
 
 **DFS-based approach:**
 ```java
-void dfs(int node, boolean[] visited, boolean[] inStack, Deque<Integer> stack) {
+void dfs(
+        int node,
+        boolean[] visited,
+        boolean[] inPath,
+        Deque<Integer> stack) {
+
     visited[node] = true;
-    inStack[node] = true;
+    inPath[node] = true;
 
     for (int neighbor : graph.get(node)) {
-        if (inStack[neighbor]) throw new RuntimeException("Cycle detected!");
-        if (!visited[neighbor]) dfs(neighbor, visited, inStack, stack);
+
+        // Neighbor is already in the current DFS path → cycle
+        if (inPath[neighbor]) {
+            throw new RuntimeException("Cycle detected!");
+        }
+
+        if (!visited[neighbor]) {
+            dfs(neighbor, visited, inPath, stack);
+        }
     }
 
-    inStack[node] = false;
-    stack.push(node); // push after all descendants are processed
+    // Leaving this node's DFS path
+    inPath[node] = false;
+
+    // All descendants are processed
+    stack.push(node);
 }
 // Final order = pop everything off the stack
 ```
