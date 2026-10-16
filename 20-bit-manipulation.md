@@ -77,6 +77,7 @@ int countSetBits(int n) {
 // n = 10  means 1 0 1 0
 //               3 2 1 0
 // Check if bit i is set
+//1 is the value being shifted, i the the number of position to shift to left
 boolean isSet = (n & (1 << i)) != 0;
 
 // Set bit i
