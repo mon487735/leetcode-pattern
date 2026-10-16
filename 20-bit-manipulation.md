@@ -73,6 +73,9 @@ int countSetBits(int n) {
 
 **Common bit tricks:**
 ```java
+//position 3 2 1 0
+// n = 10  means 1 0 1 0
+//               3 2 1 0
 // Check if bit i is set
 boolean isSet = (n & (1 << i)) != 0;
 
